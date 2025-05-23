@@ -25,6 +25,7 @@
           <a href="#skills" style="color: lightgray">Skills</a>
           <a href="#projects" style="color: lightgray">Projects</a>
           <a href="#hobbies" style="color: lightgray">Hobbies/Interests</a>
+          <a href="#media" style="color: lightgray">Links</a>
           <a href="#contact" style="color: lightgray">Contact me</a>
         </div>
       </div>    
@@ -34,7 +35,7 @@
       <div>
         
           <h1>
-            <img src="https://tienda.itam.mx/cdn/shop/products/Colmillo-Peluche-2022-01.jpg?v=1660233543&width=1445" alt="Image of itam mascot called Colmillo" width="100"/>
+            <img src="images/IFZ.jpg" alt="Imege of myself" width="100"/>
             Hi, I'm Israel Fonseca!
           </h1>
           <p>
@@ -120,26 +121,38 @@
     <section id="hobbies">
       <h2>Hobbies and interests</h2>
       <span> I enjoy playing videogames and watching series like anime. My favourites games are Metal gear solid, Souls games and Hollow Knight <br/> In my musical interests, I enjoy muplitples genres, but mainly symphonic and power metal, bands like Nightwish, Rhapsody of fire and Sonata arctica</span>
-      <br>
+      <hr>
       <video controls>
         <source src="images/Nightwish-nemo.mp4" type="video/mp4">
       </video>
     </section>
+
+
+    <section id="media">
+      <h2>
+        <img src="images/colmillo.jpg" alt="Imege of myself" width="100"/> 
+        My social networks
+      </h2>
+      
+      <span>Checkout my other platforms</span>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/israel-fonseca-35174724a/"  target="_blank">Linkedin</a></li>
+        <li><a href="https://github.com/ifonsecaz"  target="_blank">GitHub</a></li>
+      </ul>
+    </section>
+
     
     <section id="contact">
       <div>
-        <form>
+        <form action="#home" method="POST">
           <legend>Want to contact me?</legend>          
           <label>Name:</label><br>
-          <input type="text" placeholder="Name"> <br/>
+          <input type="text" minlength="5" placeholder="Name"> <br/>
           <label>Email:</label><br>
-          <input type="text" placeholder="example@gmail.com"> <br/>
+          <input type="email" placeholder="example@gmail.com"> <br/>
+          <textarea cols="500" rows="10" placeholder="Message"></textarea>
           <input type="checkbox" id="a1" name="op1" value="op1">
-          <label for="a1">Opction 1</label><br>
-          <input type="checkbox" id="a2" name="op2" value="op2">
-          <label for="a2"> Option 2 </label><br>
-          <input type="checkbox" id="a3" name="op3" value="op3">
-          <label for="a3"> Option 3</label><br/>
+          <label for="a1">Say Hi</label><br>
           <button>Submit</button>
         </form>
       </div>
