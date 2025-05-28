@@ -1,0 +1,238 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  padding-top: 50px;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.pixabay.com/photo/2018/07/05/14/45/conference-3518465_1280.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+
+  color: white;
+  overflow: hidden; 
+  background-color: rgb(185, 186, 187);
+  font-size: 1.4rem;
+  
+}
+
+.hero-text {
+  backdrop-filter: blur(8px);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-15%, -50%);
+  color: white;
+}
+
+.hero-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(7px);
+}
+
+.hero-image h1 {
+  font-weight: bold;
+}
+
+.hero-image p {
+  font-weight: bold;
+}
+
+.hero-image button {
+  background-color:#EFC16B;
+  color: black;
+  border: none;
+  padding: 20px 40px;
+  font-size: 19px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-image button:hover {
+  background-color: #c1974a;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.navbar-nav .nav-link {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: #0dcaf0 !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+#venueCarousel .carousel-item {
+  min-height: 300px; 
+  
+}
+
+#venueCarousel .card {
+  height: auto !important;
+  overflow: visible;
+}
+
+.card-title {
+  font-weight: bold;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+section h2 {
+  font-weight: 700;
+  color: #343a40;
+}
+
+.card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+footer a:hover {
+  color: #0d6efd !important;
+}
+
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.card img {
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+
+section {
+  padding: 3rem 1rem;
+  margin-bottom: 2rem;
+  border-top: 3px solid #dee2e6;
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+
+
+
+section h2 {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 575.98px) {
+  body {
+    font-size: 0.9rem;
+  }
+  .lead{
+    font-size: 1rem !important   ; 
+  }
+
+  h1, h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text,
+  .list-group-item,
+  .form-label,
+  .form-control,
+  footer a,
+  #hobbies span {
+    font-size: 0.85rem;
+  }
+
+  .navbar .nav-link {
+    font-size: 0.9rem;
+  }
+  
+  section {
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .card-body img {
+    max-width: 60px;
+  }
+
+  #about-me img {
+    width: 100px;
+    margin-bottom: 1rem;
+  }
+
+  .carousel video {
+    height: auto;
+    max-height: 200px;
+  }
+
+  footer a {
+    font-size: 1rem;
+  }
+
+  .project-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+
+  #about-me img {
+    width: 120px;
+  }
+
+  .card-body img {
+    max-width: 70px;
+  }
+
+  .carousel video {
+    max-height: 250px;
+  }
+}
